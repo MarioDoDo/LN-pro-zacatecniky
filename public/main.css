@@ -1,0 +1,128 @@
+body {
+  background: #111827;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+* {
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+a {
+  color: #f7931a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 0.6fr 1.3fr 0.6fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  grid-template-areas: "header" "co-je-ln" "jak-získat-ln" "dalsi" "footer";
+  min-width: 680px;
+  min-height: 820px;
+  width: 100%;
+  height: auto;
+}
+
+.co-je-ln {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.2fr 1.1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  text-align: center;
+  grid-template-areas: ". header ." ". video ." ". text .";
+  grid-area: co-je-ln;
+  background: #f7931a;
+}
+
+.jak-získat-ln {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". header ." ". video ." ". wallet .";
+  grid-area: jak-získat-ln;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 0.4fr;
+  grid-template-rows: 0.1fr 0.7fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . ." ". logo ." ". text .";
+  grid-area: header;
+}
+
+.dalsi {
+  width: 100%;
+  line-height: calc(2vh + 20px);
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". header ." "dis you web" ". gog .";
+  grid-area: dalsi;
+  background: #f7931a;
+}
+
+.dalsi a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dalsi a:hover {
+  color: #111827;
+  text-decoration: none;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: ". . ." ". name ." ". . .";
+  grid-area: footer;
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+table {
+  font-size: 1.2rem;
+}
+
+button {
+  background: none;
+  border: 1px solid #f7931a;
+  color: #fff;
+}
+
+button:hover {
+  background: #f7931a;
+}
